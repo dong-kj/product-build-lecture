@@ -1,1 +1,63 @@
-/* Add styles here */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#generate-btn {
+    background-color: #4CAF50; /* A nice green */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#generate-btn:hover {
+    background-color: #45a049;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 50px; /* Pre-allocate space */
+}
+
+.lotto-ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
