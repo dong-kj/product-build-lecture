@@ -1,29 +1,64 @@
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --container-bg: #fff;
+    --header-color: #555;
+    --button-bg: #4CAF50;
+    --button-hover-bg: #45a049;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+    --bg-color: #2c2c2c;
+    --text-color: #f1f1f1;
+    --container-bg: #424242;
+    --header-color: #ccc;
+    --button-bg: #5cb85c;
+    --button-hover-bg: #4cae4c;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--container-bg);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: background-color 0.3s;
 }
 
 h1 {
-    margin-bottom: 30px;
-    color: #555;
+    margin-bottom: 15px;
+    color: var(--header-color);
+}
+
+.theme-switcher {
+    margin-bottom: 20px;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+#theme-toggle + label {
+    cursor: pointer;
+    font-size: 14px;
 }
 
 #generate-btn {
-    background-color: #4CAF50; /* A nice green */
+    background-color: var(--button-bg);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -38,7 +73,7 @@ h1 {
 }
 
 #generate-btn:hover {
-    background-color: #45a049;
+    background-color: var(--button-hover-bg);
 }
 
 .result-container {
@@ -59,5 +94,5 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     margin: 0 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px var(--shadow-color);
 }
