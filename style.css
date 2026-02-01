@@ -96,3 +96,70 @@ h1 {
     margin: 0 5px;
     box-shadow: 0 2px 5px var(--shadow-color);
 }
+
+/* Contact Form Styles */
+.contact-form-container {
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.contact-form-container h2 {
+    color: var(--header-color);
+    margin-bottom: 25px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form-container label {
+    text-align: left;
+    margin-bottom: -5px;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s;
+}
+
+.contact-form-container input[type="text"]:focus,
+.contact-form-container input[type="email"]:focus,
+.contact-form-container textarea:focus {
+    border-color: var(--button-bg);
+    outline: none;
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form-container button[type="submit"] {
+    background-color: #007bff; /* A nice blue for submit */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
